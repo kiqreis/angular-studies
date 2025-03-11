@@ -1,0 +1,5 @@
+<div class="card" [ngClass]="cardStyle">
+  <div class="card__plan card__item"><strong>{{ planType }}</strong> plan</div>
+  <div class="card__price card__item">{{ price | currency: "USD":"symbol" }}</div>
+  <div class="card__button card__item">Acquire</div>
+</div>
