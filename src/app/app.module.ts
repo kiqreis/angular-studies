@@ -3,20 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CardComponent } from './components/card/card.component';
-import { CardPageComponent } from './components/card-page/card-page.component';
-import { CardButtonComponent } from './components/card-button/card-button.component';
+import { CardManagementModule } from './modules/card-management/card-management.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CardComponent,
-    CardPageComponent,
-    CardButtonComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CardManagementModule
   ],
   providers: [],
   bootstrap: [AppComponent]
