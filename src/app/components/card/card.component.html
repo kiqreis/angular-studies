@@ -1,5 +1,5 @@
-<div class="card" [ngClass]="cardStyle">
-  <div class="card__plan card__item"><strong>{{ planType }}</strong> plan/month</div>
-  <div class="card__price card__item">{{ price | currency: "USD":"symbol" }}</div>
-  <app-card-button [cardStyle]="cardStyle"></app-card-button>
+<div class="card" [ngClass]="plan.infos.cardStyle">
+  <div class="card__plan card__item"><strong>{{ plan.infos.planType }}</strong> plan/month</div>
+  <div class="card__price card__item">{{ plan.infos.price | currency: "USD":"symbol" }}</div>
+  <app-card-button [cardStyle]="plan.infos.cardStyle"></app-card-button>
 </div>
