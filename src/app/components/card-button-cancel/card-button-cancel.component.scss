@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$coral-pastel: #ffd1c9;
+$coral-pastel-hover: #ffada0;
+$coral-txt: #ff8c75;
+
+$baby-blue-pastel: #cce4ff;
+$baby-blue-pastel-hover: #a8cfff;
+$baby-blue-txt: #87bfff;
+
+.card {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 25px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+
+  &.coral {
+    background-color: $coral-pastel;
+    color: $coral-txt;
+
+    &:hover {
+      background-color: $coral-pastel-hover;
+      color: #ffffff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      transform: translateY(-2px);
+    }
+  }
+
+  &.baby-blue {
+    background-color: $baby-blue-pastel;
+    color: $baby-blue-txt;
+
+    &:hover {
+      background-color: $baby-blue-pastel-hover;
+      color: #ffffff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      transform: translateY(-2px);
+    }
+  }
+}
